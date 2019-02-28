@@ -15,3 +15,4 @@ Install NVidia CUDA packages.
 
 * ``DIB_NVIDIA_CUDA_DELETE_REPO`` Delete the repo after building the image.
   Default is ``y``
+
