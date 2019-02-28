@@ -2,13 +2,13 @@
 
 case "$DISTRO_NAME" in
     centos* | rhel*)
-	yum install -y cuda=${DIB_NVIDIA_CUDA_VERSION}
+	yum install -y cuda=${NVIDIA_CUDA_VERSION}
 	;;
     fedora*)
-	dnf install -y cuda=${DIB_NVIDIA_CUDA_VERSION}
+	dnf install -y cuda=${NVIDIA_CUDA_VERSION}
 	;;
     ubuntu* | debian*)
-	apt-get -y install cuda=${DIB_NVIDIA_CUDA_VERSION}
+	apt-get -y install cuda=${NVIDIA_CUDA_VERSION}
 	;;
     *)
 	echo "Distro \"$DISTRO_NAME\" is not recognised"
